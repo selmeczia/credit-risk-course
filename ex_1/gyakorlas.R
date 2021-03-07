@@ -39,11 +39,11 @@ for (i in n:k){
 
 # 7 
 
-keresztnevek <- c("Toni", "Alexandra", "Adam")
-szuletesi_evek <- c(1996, 1996, 1996)
-magassagok <- c(170, 165, 168)
-nemek <- c("ferfi", "no", "ferfi")
-elkotelezettsegek <- c(75, 90, 80)
+keresztnevek <- c("Toni", "Alexandra", "Adam", "Andreasz", "Akos")
+szuletesi_evek <- c(1996, 1996, 1996, 1995, 1996)
+magassagok <- c(170, 165, 168, 175, 185)
+nemek <- c("ferfi", "no", "ferfi", "ferfi", "ferfi")
+elkotelezettsegek <- c(75, 90, 80, 85, 90)
 
 csapat_df <- data.frame("keresztnev" = keresztnevek,
                           "szuletesi_ev" = szuletesi_evek,
@@ -59,6 +59,7 @@ atlagos_noi_eletkor <- as.integer(format(Sys.Date(), "%Y")) -
 eloszlas_180_alatt <- table(subset(csapat_df, magassag < 180)$nem)
 
 
+## Github link: https://github.com/selmeczia/credit-risk-course 
 
 
 
