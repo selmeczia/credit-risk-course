@@ -97,5 +97,8 @@ ggplot(inspect_dt, aes(x = Inspection_year, y = Default_prob))+
   theme_economist()
 
 
+## Github link: 
+# https://github.com/selmeczia/credit-risk-course
+
 
 
